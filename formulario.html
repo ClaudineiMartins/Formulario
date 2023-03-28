@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" type="module" defer></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+
+
+    
+</head>
+<body>
+    <form action="./confirmacao.html" >
+      <div >
+        <label for="name">Nome:</label>
+        <input class="input--form" data-tipo="nome" type="text" id="name" name="name" required><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+      <div>  
+        <label for="email">E-mail:</label>
+        <input class="input--form" data-tipo="email" type="email" id="email" name="email" required> <br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+        
+      <div> 
+        <label for="Nascimento">Data de Nascimento:</label>
+        <input class="input--form input--form--Nascimento " data-tipo="Nascimento" type="date" id="Nascimento" required name="dataNascimento"><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+        
+      <div> 
+        <label for="cpf">CPF:</label>
+        <input class="input--form" data-tipo="cpf" type="text" id="cpf" name="cpf" required><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+        </div>
+        
+
+        <div> 
+          <label for="password">Senha:</label>
+          <input class="input--form" data-tipo="senha" type="password" id="password" required name="password"><br>
+          <span class="mensagem-erro">Este campo nao esta valido</span>
+        </div>
+        <div> 
+          <label for="cep">CEP:</label>
+          <input class="input--form" data-tipo="cep" type="text" id="cep" pattern="[\d]{5}-?[\d]{3}" name="cep" required><br>
+          <span class="mensagem-erro">Este campo nao esta valido</span>
+        </div>
+        
+      <div> 
+        <label for="street">Rua:</label>
+        <input class="input--form" data-tipo="enderço" type="text" id="street" required name="street"><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+        
+      <div> 
+        <label for="city">Cidade:</label>
+        <input class="input--form"data-tipo="cidade" type="text" id="city" required name="city"><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+        
+      <div> 
+        <label for="state">Estado:</label>
+        <input class="input--form" data-tipo="estado" type="text" id="state" required name="state"><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      </div>
+        
+        
+      <div> 
+        <label for="price">Preço:</label>
+        <input class="input--form" data-tipo="preco" type="text" id="price" required name="price"><br>
+        <span class="mensagem-erro">Este campo nao esta valido</span>
+      
+      </div>
+        <input class="input--form" data-tipo="enviar" type="submit" value="Enviar">
+      </div>
+    </form>
+      
+    <style>
+
+        form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #666;
+}
+.container-invalido label {
+  color: red;
+}
+.mensagem-erro {
+  display: none;
+}
+
+.input--form--Nascimento {
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+
+
+
+.input--form {
+  width: 100%;
+  border: solid 1px transparent;
+  box-sizing: border-box;
+}
+.input--form {
+  display: block;
+}
+.container-invalido .input--form {
+  border: solid 1px red;
+}
+.container-invalido .mensagem-erro{
+  display: block;
+  color: red;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #38a1f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #0d6efd;
+}
+
+    </style>
+    <script>
+        
+    </script>
+
+    
+</body>
+</html>
